@@ -1,0 +1,1 @@
+Exercise from The Odin Project on OOP, prototypes, constructors, etc. in JavaScript.
