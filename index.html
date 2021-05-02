@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOP Practice</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Library</title>
 </head>
+
 <body>
-    <div></div>
+    <div class="container">
+        <h1 class="xlg-text header">Library</h1>
+        <div class="form-container">
+            <div class="input-container">
+                <label for="title" class="md-text">Title</label>
+                <input name="title" type="text" placeholder="Title here..." class="txt">
+            </div>
+
+            <div class="input-container">
+                <label for="author" class="md-text">Author</label>
+                <input name="author" type="text" placeholder="Author here..." class="txt">
+            </div>
+
+            <div class="input-container">
+                <label for="pages" class="md-text"># of pages</label>
+                <input type="number" name="pages" id="pages">
+                <input type="checkbox" name="read" id="read"><span class="md-text">Read</span>
+            </div>
+
+            <div class="input-container">
+                <input type="submit" value="Submit" class="btn">
+            </div>
+            
+        </div>
+        <div class="book-container">
+            <div class="book">
+                <h2 class="lg-text title-card">Atomic Habits</h2>
+                <p class="md-text author-card">James Clear</p>
+                <p class="md-text pages-card">300</p>
+                <p class="md-text read-card">Not read yet</p>
+            </div>
+
+            <div class="book">
+                <h2 class="lg-text title-card">Atomic Habits</h2>
+                <p class="md-text author-card">James Clear</p>
+                <p class="md-text pages-card">300</p>
+                <p class="md-text read-card">Not read yet</p>
+            </div>
+
+            <div class="book">
+                <h2 class="lg-text title-card">Atomic Habits</h2>
+                <p class="md-text author-card">James Clear</p>
+                <p class="md-text pages-card">300</p>
+                <p class="md-text read-card">Not read yet</p>
+            </div>
+        </div>
+    </div>
     <script src="Book.js"></script>
 </body>
+
 </html>
