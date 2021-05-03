@@ -27,6 +27,7 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, input, label {
     display: block;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
     line-height: 1;
@@ -55,7 +56,7 @@ table {
 
 .header {
     text-align: center;
-    background-color: rgb(255, 255, 123);
+    background-color: rgb(127, 255, 123);
     padding: 15px;
 }
 
@@ -63,7 +64,68 @@ table {
     font-size: 2rem;
 }
 
+.form-container {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .input-container {
-    width: 55%;
-    margin: 15px auto;
+    /*nothing for now*/
+}
+
+#read {
+    display: inline-block;
+    margin: 10px 10px 10px 0px;
+}
+
+.md-text {
+    font-size: 1rem;
+}
+
+.txt {
+    border: 2px solid black;
+    border-radius: 2px;
+    line-height: 2;
+    font-size: 1rem;
+}
+
+.btn {
+    border-radius: 0px;
+    border: 2px solid black;
+    margin: auto;
+    width: 80px;
+    height: 45px;
+    font-weight: 250;
+    font-size: 1rem;
+}
+
+.center-input-container {
+    width: 50%;
+    margin: auto;
+}
+
+.book-container {
+    width: 80%;
+    margin: auto;
+}
+
+.book {
+    text-align: center;
+    margin: 25px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    box-shadow: 3px 2px 2px rgb(160, 240, 167);
+}
+
+.book > * {
+    margin: 5px;
+}
+
+.title-card {
+    padding-bottom: 8px;
+    font-weight: bold;
 }
