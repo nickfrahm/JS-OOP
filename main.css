@@ -73,9 +73,9 @@ table {
     flex-direction: column;
 }
 
-.input-container {
-    /*nothing for now*/
-}
+/*.input-container {
+    nothing for now
+}*/
 
 #read {
     display: inline-block;
