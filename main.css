@@ -129,3 +129,15 @@ table {
     padding-bottom: 8px;
     font-weight: bold;
 }
+
+.f-right {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 48%;
+}
+
+.f-right:hover {
+    cursor: pointer;
+    color: tomato;
+}

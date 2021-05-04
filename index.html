@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Library</title>
 </head>
 
@@ -15,49 +17,39 @@
         <div class="form-container">
             <div class="input-container">
                 <label for="title" class="md-text">Title</label>
-                <input name="title" type="text" placeholder="Title here..." class="txt">
+                <input name="title" type="text" placeholder="Title here..." class="txt" id="title">
             </div>
 
             <div class="input-container">
                 <label for="author" class="md-text">Author</label>
-                <input name="author" type="text" placeholder="Author here..." class="txt">
+                <input name="author" type="text" placeholder="Author here..." class="txt" id="author">
             </div>
 
             <div class="input-container">
                 <label for="pages" class="md-text"># of pages</label>
                 <input type="text" class="txt" name="pages" id="pages" placeholder="# of pages...">
-                <div class="center-input-container"> 
+                <div class="center-input-container">
                     <input type="checkbox" name="read" id="read">
                     <span class="md-text">Read?</span>
                 </div>
             </div>
 
             <div class="input-container">
-                <input type="submit" value="Submit" class="btn">
+                <input type="submit" value="Submit" class="btn" id="submit">
             </div>
 
         </div>
         <div class="book-container">
-            <div class="book">
-                <h2 class="lg-text title-card">The Art of Not Giving A F$#!</h2>
-                <p class="md-text author-card">James Clear</p>
-                <p class="md-text pages-card">300</p>
-                <p class="md-text read-card">Not read yet</p>
-            </div>
 
+            <!-- Example book
             <div class="book">
+                <i class="fas fa-trash f-right"></i>
                 <h2 class="lg-text title-card">Atomic Habits</h2>
                 <p class="md-text author-card">James Clear</p>
                 <p class="md-text pages-card">300</p>
                 <p class="md-text read-card">Not read yet</p>
             </div>
-
-            <div class="book">
-                <h2 class="lg-text title-card">Atomic Habits</h2>
-                <p class="md-text author-card">James Clear</p>
-                <p class="md-text pages-card">300</p>
-                <p class="md-text read-card">Not read yet</p>
-            </div>
+            -->
         </div>
     </div>
     <script src="Book.js"></script>
