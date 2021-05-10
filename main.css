@@ -130,14 +130,26 @@ table {
     font-weight: bold;
 }
 
-.f-right {
+.trash {
     margin: 0;
     padding: 0;
     position: relative;
     left: 48%;
 }
 
-.f-right:hover {
+.trash:hover {
     cursor: pointer;
     color: tomato;
+}
+
+.readIcon {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 47%;
+}
+
+.readIcon:hover {
+    cursor: pointer;
+    color: lawngreen;
 }

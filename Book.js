@@ -43,7 +43,8 @@ function displayLibrary() {
   const library = document.querySelector("div.book-container");
   books.forEach((book) => {
     library.innerHTML += `<div class="book" id="${books.indexOf(book)}">
-      <i class="fas fa-trash f-right"></i>
+      <i class="fas fa-book readIcon"></i>
+      <i class="fas fa-trash trash"></i>
       <h2 class="lg-text title-card">${book.title}</h2>
       <p class="md-text author-card">${book.author}</p>
       <p class="md-text pages-card">${book.pages}</p>
@@ -52,6 +53,15 @@ function displayLibrary() {
   });
   document.querySelectorAll("i.fa-trash").forEach((card) => {
     card.addEventListener("click", () => removeBook(card.parentElement.id));
+  });
+
+  document.querySelectorAll("i.fa-book").forEach((card) => {
+    card.addEventListener("click", 
+    () => {
+      changeReadStatus(card.parentElement.id);
+      clearDOM();
+      displayLibrary();
+    });
   });
 }
 
@@ -72,4 +82,9 @@ function removeBook(index) {
   books.splice(index,1);
   clearDOM();
   displayLibrary();
+}
+
+function changeReadStatus(index) {
+  console.log(index);
+  books[index].read = !books[index].read;
 }
